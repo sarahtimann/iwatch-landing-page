@@ -1,5 +1,5 @@
 const MintWatch = () => {
-  return <img src="../../public/mint.png" alt="Mint Color" />;
+  return <img src="/mint.png" alt="Mint Color" />;
 };
 
 export default MintWatch;

@@ -1,5 +1,5 @@
 const NavyWatch = () => {
-  return <img src="../../public/navy.png" alt="Navy Color" />;
+  return <img src="/navy.png" alt="Navy Color" />;
 };
 
 export default NavyWatch;

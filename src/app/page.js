@@ -19,9 +19,15 @@ export default function Home() {
       </div>
       <Image src={Navy} alt="Picture of Apple Watch" width={500} height={500} />
       <div className="color-options">
-        <NavyWatch />
-        <MintWatch />
-        <OceanWatch />
+        <div className="watch-image navy">
+          <NavyWatch />
+        </div>
+        <div className="watch-image mint">
+          <MintWatch />
+        </div>
+        <div className="watch-image ocean">
+          <OceanWatch />
+        </div>
       </div>
     </section>
   );

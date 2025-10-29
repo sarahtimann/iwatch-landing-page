@@ -1,5 +1,5 @@
 const OceanWatch = () => {
-  return <img src="../../public/ocean.png" alt="Ocean Color" />;
+  return <img src="/ocean.png" alt="Ocean Color" />;
 };
 
 export default OceanWatch;
