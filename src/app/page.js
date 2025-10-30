@@ -12,21 +12,23 @@ import OceanWatch from "./components/OceanWatch";
 export default function Home() {
   return (
     <section className="grid-container">
-      <div>
+      <div className="text-content">
         <Overskrift />
         <Underoverskrift />
         <BuyNowButton />
       </div>
-      <Image src={Navy} alt="Picture of Apple Watch" width={500} height={500} />
-      <div className="color-options">
-        <div className="watch-image navy">
-          <NavyWatch />
-        </div>
-        <div className="watch-image mint">
-          <MintWatch />
-        </div>
-        <div className="watch-image ocean">
-          <OceanWatch />
+      <div className="gallery-options">
+        <Image src={Navy} alt="Picture of Apple Watch" width={500} height={500} />
+        <div className="color-options">
+          <div className="watch-image navy">
+            <NavyWatch />
+          </div>
+          <div className="watch-image mint">
+            <MintWatch />
+          </div>
+          <div className="watch-image ocean">
+            <OceanWatch />
+          </div>
         </div>
       </div>
     </section>
