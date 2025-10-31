@@ -8,8 +8,8 @@ import BuyNowButton from "./components/BuyNowButton";
 // import NavyWatch from "./components/NavyWatch";
 // import MintWatch from "./components/MintWatch";
 // import OceanWatch from "./components/OceanWatch";
-import GalleryOptions from "./components/GalleryOptions";
 import Header from "./components/Header";
+import GalleryOptions from "./components/GalleryOptions";
 
 export default function Home() {
   return (
