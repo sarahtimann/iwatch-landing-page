@@ -28,6 +28,45 @@ body {
   margin: 2rem 0 2rem 10rem;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15rem;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
+
+.apple-icon {
+  font-size: 30px;
+  color: white;
+}
+
+.iwatch-text {
+  outline: 1px solid white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 50px;
+  background-color: white;
+  color: #b6ccda;
+}
+
+.header-icons {
+  font-size: 20px;
+  color: white;
+  gap: 1rem;
+  display: flex;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
