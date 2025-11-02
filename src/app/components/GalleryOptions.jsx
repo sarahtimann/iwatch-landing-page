@@ -7,23 +7,28 @@ import navy from "../../../public/navy.png";
 import mint from "../../../public/mint.png";
 import ocean from "../../../public/ocean.png";
 
+import Dot from "./Dot";
+
 import { useState } from "react";
 
 const GalleryOptions = () => {
   const [selectedWatch, setSelectedWatch] = useState(mint);
   return (
-    <div className="gallery-options">
-      <Image src={selectedWatch} alt="Picture of Apple Watch" width={500} height={500} />
+    <div className="gallery-wrapper">
+      <div className="gallery-options">
+        <figure>
+          <Image src={selectedWatch} alt="Picture of Apple Watch" width={500} height={500} />
+        </figure>
+        <div className="dots">
+          <Dot color="mint" relatedWatch={mint} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
+          <Dot color="navy" relatedWatch={navy} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
+          <Dot color="ocean" relatedWatch={ocean} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
+        </div>
+      </div>
       <div className="color-options">
-        <div className="watch-image navy">
-          <WatchThumb setSelectedWatch={setSelectedWatch} relatedWatch={navy} />
-        </div>
-        <div className="watch-image mint">
-          <WatchThumb setSelectedWatch={setSelectedWatch} relatedWatch={mint} />
-        </div>
-        <div className="watch-image ocean">
-          <WatchThumb setSelectedWatch={setSelectedWatch} relatedWatch={ocean} />
-        </div>
+        <WatchThumb relatedWatch={mint} setSelectedWatch={setSelectedWatch} />
+        <WatchThumb relatedWatch={navy} setSelectedWatch={setSelectedWatch} />
+        <WatchThumb relatedWatch={ocean} setSelectedWatch={setSelectedWatch} />
       </div>
     </div>
   );

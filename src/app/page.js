@@ -22,9 +22,9 @@ export default function Home() {
         </div>
         <GalleryOptions />
         <div className="dots">
+          {/* <Dot />
           <Dot />
-          <Dot />
-          <Dot />
+          <Dot /> */}
         </div>
       </section>
       <Arrows />
