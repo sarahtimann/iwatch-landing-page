@@ -8,7 +8,7 @@ import BuyNowButton from "./components/BuyNowButton";
 import Header from "./components/Header";
 import GalleryOptions from "./components/GalleryOptions";
 import Arrows from "./components/Arrows";
-import Dot from "./components/Dot";
+// import Dot from "./components/Dot";
 
 export default function Home() {
   return (

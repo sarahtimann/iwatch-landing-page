@@ -17,12 +17,32 @@ const GalleryOptions = () => {
     <div className="gallery-wrapper">
       <div className="gallery-options">
         <figure>
-          <Image src={selectedWatch} alt="Picture of Apple Watch" width={500} height={500} />
+          <Image
+            src={selectedWatch}
+            alt="Picture of Apple Watch"
+            width={500}
+            height={500}
+          />
         </figure>
         <div className="dots">
-          <Dot color="mint" relatedWatch={mint} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
-          <Dot color="navy" relatedWatch={navy} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
-          <Dot color="ocean" relatedWatch={ocean} selectedWatch={selectedWatch} setSelectedWatch={setSelectedWatch} />
+          <Dot
+            color="mint"
+            relatedWatch={mint}
+            selectedWatch={selectedWatch}
+            setSelectedWatch={setSelectedWatch}
+          />
+          <Dot
+            color="navy"
+            relatedWatch={navy}
+            selectedWatch={selectedWatch}
+            setSelectedWatch={setSelectedWatch}
+          />
+          <Dot
+            color="ocean"
+            relatedWatch={ocean}
+            selectedWatch={selectedWatch}
+            setSelectedWatch={setSelectedWatch}
+          />
         </div>
       </div>
       <div className="color-options">
