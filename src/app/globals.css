@@ -11,6 +11,11 @@
   --ocean: #f9cdc4;
 }
 
+/* @layer components {
+  .active { bg-white text-[20px] font-light text-blue-500;
+  }
+} */
+
 /* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -170,7 +175,7 @@ Under unikke farver, da det var statisk
   margin-top: 1rem;
 }
 
-.dot {
+.dot { mangler denne!!!
   width: 30px;
   height: 30px;
   border: 2px solid white;
@@ -209,8 +214,16 @@ h2 {
   margin-top: -1rem;
 }
 
-/* h3 {
+h3 {
   font-size: 20px;
   color: white;
   font-weight: lighter;
-} */
+}
+
+#iwatch {
+  outline: 1px solid white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 50px;
+  background-color: white;
+  color: #b6ccda;
+}
