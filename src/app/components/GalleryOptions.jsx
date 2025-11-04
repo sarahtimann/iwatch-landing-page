@@ -15,8 +15,8 @@ const GalleryOptions = () => {
   const [selectedWatch, setSelectedWatch] = useState(mint);
   return (
     <div className="gallery-wrapper">
-      <div className="gallery-options">
-        <figure>
+      <div className="flex items-center gap-0">
+        <figure className="-ml-5 block">
           <Image
             src={selectedWatch}
             alt="Picture of Apple Watch"
@@ -24,7 +24,7 @@ const GalleryOptions = () => {
             height={500}
           />
         </figure>
-        <div className="dots">
+        <div className="-ml-1 flex flex-col gap-8">
           <Dot
             color="mint"
             relatedWatch={mint}
@@ -45,10 +45,22 @@ const GalleryOptions = () => {
           />
         </div>
       </div>
-      <div className="col-start-2 col-end-3 mt-8 mr-40 flex gap-10 justify-self-end">
-        <WatchThumb relatedWatch={mint} setSelectedWatch={setSelectedWatch} />
-        <WatchThumb relatedWatch={navy} setSelectedWatch={setSelectedWatch} />
-        <WatchThumb relatedWatch={ocean} setSelectedWatch={setSelectedWatch} />
+      <div className="flex gap-10">
+        <WatchThumb
+          relatedWatch={mint}
+          setSelectedWatch={setSelectedWatch}
+          color="mint"
+        />
+        <WatchThumb
+          relatedWatch={navy}
+          setSelectedWatch={setSelectedWatch}
+          color="navy"
+        />
+        <WatchThumb
+          relatedWatch={ocean}
+          setSelectedWatch={setSelectedWatch}
+          color="ocean"
+        />
       </div>
     </div>
   );
