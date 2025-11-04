@@ -1,4 +1,4 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -25,9 +25,7 @@
   }
 } */
 
-body {
-  /* background: var(--background);
-  color: var(--foreground); */
+/* body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #c8dce5, #b6ccda);
   margin: 1rem 0 1rem 10rem;
@@ -75,7 +73,6 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
-  /* grid-template-rows: repeat(2, 50vh); */
 }
 
 .text-content {
@@ -120,8 +117,6 @@ h2 {
 }
 
 .watch-image {
-  /* width: auto;
-  height: auto; */
   position: relative;
 }
 
@@ -129,10 +124,10 @@ h2 {
   display: block;
   width: 100%;
   position: relative;
-  z-index: 2; /* billedet øverst */
+  z-index: 2;
 }
 
-.watch-image::after {
+.watch-image::after { mangler denne!!!
   content: "";
   position: absolute;
   border-radius: 20px;
@@ -141,19 +136,19 @@ h2 {
   width: 100%;
   height: 70%;
   z-index: 1;
-  /* box-shadow: inset 0 0.5px 2px #5bbdaf; */
 }
 
-/* Unikke farver */
-.watch-image.navy::after {
+Under unikke farver, da det var statisk
+
+.watch-image.navy::after { mangler denne!!!
   background-color: #4345588d;
 }
 
-.watch-image.mint::after {
+.watch-image.mint::after { mangler denne!!!
   background-color: #6addcc93;
 }
 
-.watch-image.ocean::after {
+.watch-image.ocean::after { mangler denne!!!
   background-color: #f9cdc49d;
 }
 
@@ -178,7 +173,6 @@ h2 {
 .dot {
   width: 30px;
   height: 30px;
-  /* background-color: #58d7c4; */
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
@@ -200,4 +194,23 @@ h2 {
   flex-direction: column;
   gap: 2rem;
   margin-right: 2rem;
+} */
+
+h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bolder;
 }
+
+h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: lighter;
+  margin-top: -1rem;
+}
+
+/* h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+} */

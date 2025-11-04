@@ -45,7 +45,7 @@ const GalleryOptions = () => {
           />
         </div>
       </div>
-      <div className="color-options">
+      <div className="col-start-2 col-end-3 mt-8 mr-40 flex gap-10 justify-self-end">
         <WatchThumb relatedWatch={mint} setSelectedWatch={setSelectedWatch} />
         <WatchThumb relatedWatch={navy} setSelectedWatch={setSelectedWatch} />
         <WatchThumb relatedWatch={ocean} setSelectedWatch={setSelectedWatch} />

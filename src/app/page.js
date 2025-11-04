@@ -14,18 +14,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className="grid-container">
-        <div className="text-content">
+      <section className="grid grid-cols-[1fr_1fr_auto]">
+        <div className="self-center justify-self-start">
           <Overskrift />
           <Underoverskrift />
           <BuyNowButton />
         </div>
         <GalleryOptions />
-        <div className="dots">
-          {/* <Dot />
-          <Dot />
-          <Dot /> */}
-        </div>
+        <div className="dots"></div>
       </section>
       <Arrows />
     </>
