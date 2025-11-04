@@ -4,7 +4,7 @@ import { LuShoppingBag } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <header className="mr-40 flex items-center justify-between">
+    <header className="mr-40 mb-3 flex items-center justify-between">
       <div className="text-3xl text-white">
         <SiApple />
       </div>
